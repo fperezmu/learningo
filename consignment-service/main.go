@@ -8,9 +8,10 @@ import (
 	"sync"
 
 	// Import the generated protobuf code
+	pb "learningo/consignment-service/proto/consignment"
+
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
-	pb "ms01.consul.fperezmu.go/consignment-service/proto/consignment"
 )
 
 const (
