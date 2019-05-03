@@ -1,11 +1,12 @@
+// shippy-service-consignment/main.go
 package main
 
 import (
 	"fmt"
 
-	pb "learningo/consignment-service/proto/consignment"
-
+	// Import the generated protobuf code
 	"context"
+	pb "learningo/consignment-service-micro/proto/consignment"
 
 	"github.com/micro/go-micro"
 )
@@ -71,7 +72,7 @@ func main() {
 	srv := micro.NewService(
 
 		// This name must match the package name given in your protobuf definition
-		micro.Name("shippy.service.consignment"),
+		micro.Name("service.consignment"),
 	)
 
 	// Init will parse the command line flags.
